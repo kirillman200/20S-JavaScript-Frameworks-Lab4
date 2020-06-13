@@ -1,0 +1,17 @@
+<%- include ('../partials/header') %>
+
+ <div class="container my-5">
+  <header>
+    <h1> My Products </h1>
+  </header>
+  <hr>
+
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title"><%= product.name %></h5>
+      <p class="card-text"><%- product.description %></p>
+    </div>
+    <div class="card-footer bg-transparent border-success"> Price - <%- product.price %> $</div>
+  </div>
+</div>
+<%- include ('../partials/footer') %>
